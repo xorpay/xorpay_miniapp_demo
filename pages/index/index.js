@@ -3,13 +3,14 @@ const app = getApp()
 
 Page({
   data: {
-    'aid': '101',
-    'name': 'XorPay3',
+    'aid': '1',
+    'name': 'XorPay3测试',
     'pay_type': 'jsapi',
     'price': '0.03',
-    'order_id': 'm-6',
+    'order_id': 'm-10',
     'notify_url': 'https://xorpay.com/bb',
-    'secret': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    'more': 'ojbk',
+    'secret': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
   },
   //事件处理函数
   input_text: function (e) {
@@ -29,9 +30,10 @@ Page({
         'price': this.data.price,
         'order_id': this.data.order_id,
         'notify_url': this.data.notify_url,
-        'sign': md5.hexMD5(this.data.name + this.data.pay_type + this.data.price + this.data.order_id + this.data.notify_url + this.data.secret),
+        'more': this.data.more,
+        'sign': md5.md5(this.data.name + this.data.pay_type + this.data.price + this.data.order_id + this.data.notify_url + this.data.secret),
       },
-      envVersion: 'develop',
+      //envVersion: 'develop',
       fail(res) {
         wx.showToast({
           title: res.errMsg,
