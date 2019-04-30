@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.1",
+	"libVersion": "2.6.6",
 	"appid": "wx240de4f9a6b72fcf",
 	"projectname": "xorpay_miniapp_demo",
 	"debugOptions": {

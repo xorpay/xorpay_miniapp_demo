@@ -4,13 +4,13 @@ const app = getApp()
 Page({
   data: {
     'aid': '1',
-    'name': 'XorPay3测试',
+    'name': 'XorPay测试',
     'pay_type': 'jsapi',
     'price': '0.03',
-    'order_id': 'm-10',
-    'notify_url': 'https://xorpay.com/bb',
+    'order_id': 'test-0001',
+    'notify_url': 'https://abc.com/',
     'more': 'ojbk',
-    'secret': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    'secret': 'xxxx',
   },
   //事件处理函数
   input_text: function (e) {
@@ -21,7 +21,7 @@ Page({
   },
   pay: function() {
     wx.navigateToMiniProgram({
-      appId: 'wx6eeed4ca124a1abf',
+      appId: 'wx6c2423928b92ca14',
       path: 'pages/index/index',
       extraData: {
         'aid': this.data.aid,
