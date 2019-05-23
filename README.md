@@ -3,6 +3,8 @@
 - xorpay 小程序支付 demo
 - 先联系管理员开通你账号的跳转权限
 - 直接用 微信开发者工具 导入项目运行即可，记得修改自己的 aid 和 app secret
+- 最终效果
+![xorpay 小程序效果](https://upload-images.jianshu.io/upload_images/16698538-d252ef3730a44708.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/320/format/webp)
 
 跳转 XorPay 收银台小程序 appid: wx6eeed4ca124a1abf
 
