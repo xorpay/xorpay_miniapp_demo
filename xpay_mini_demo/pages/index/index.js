@@ -21,8 +21,7 @@ Page({
   },
   pay: function() {
     wx.navigateToMiniProgram({
-      //appId: 'wx6c2423928b92ca14',
-      appId: 'wx6eeed4ca124a1abf',
+      appId: 'wx6c2423928b92ca14',
       path: 'pages/index/index',
       extraData: {
         'aid': this.data.aid,
@@ -34,7 +33,7 @@ Page({
         'more': this.data.more,
         'sign': md5.md5(this.data.name + this.data.pay_type + this.data.price + this.data.order_id + this.data.notify_url + this.data.secret),
       },
-      envVersion: 'develop',
+      //envVersion: 'develop',
       fail(res) {
         wx.showToast({
           title: res.errMsg,
