@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "XorPay 小程序跳转支付 Demo",
+    "navigationBarTextStyle":"black"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx6eeed4ca124a1abf"
+  ]
+}
