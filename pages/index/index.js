@@ -21,7 +21,7 @@ Page({
   },
   pay: function() {
     wx.navigateToMiniProgram({
-      appId: 'wx6eeed4ca124a1abf',
+      appId: 'wx6c2423928b92ca14',
       path: 'pages/index/index',
       extraData: {
         'aid': this.data.aid,
