@@ -4,7 +4,7 @@ const app = getApp()
 Page({
   data: {
     'aid': '1',
-    'name': 'XorPay测试',
+    'name': 'XorPay test',
     'pay_type': 'jsapi',
     'price': '0.03',
     'order_id': 'test-0001',
@@ -21,7 +21,7 @@ Page({
   },
   pay: function() {
     wx.navigateToMiniProgram({
-      appId: 'wx6c2423928b92ca14',
+      appId: 'wx455af826b1e7f2df',
       path: 'pages/index/index',
       extraData: {
         'aid': this.data.aid,
