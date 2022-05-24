@@ -6,13 +6,13 @@
 - 最终效果
 ![xorpay 小程序效果](https://upload-images.jianshu.io/upload_images/16698538-d252ef3730a44708.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/320/format/webp)
 
-跳转 XorPay 收银台小程序 appid: wx6eeed4ca124a1abf
+跳转 XorPay 收银台小程序 appid: wx455af826b1e7f2df
 
 在 app.json 中添加:
 
 ```
     "navigateToMiniProgramAppIdList": [
-        "wx6eeed4ca124a1abf"
+        "wx455af826b1e7f2df"
     ]
 ```
 
@@ -20,18 +20,18 @@
 
 ```
     wx.navigateToMiniProgram({
-        appId: 'wx6eeed4ca124a1abf',
+        appId: 'wx455af826b1e7f2df',
         path: 'pages/index/index',
         extraData: {
             'aid': '1',  #aid
-            'name': 'XorPay充值',
+            'name': 'test-xorpay-0001',
             'pay_type': 'jsapi',
             'price': '0.02',
             'order_id': 'm-5',
             'notify_url': 'https://abc.com/notify',
-            'sign': md5.hexMD5('XorPay充值' + 'jsapi' + '0.02' + 'm-5' + 'https://abc.com/notify' + 'app secret'),
+            'sign': md5.hexMD5('test-xorpay-0001' + 'jsapi' + '0.02' + 'm-5' + 'https://abc.com/notify' + 'app secret'),
         },
-        envVersion: 'develop',
+        //envVersion: 'develop',
         fail(res) {
             wx.showToast({
                 title: res.errMsg,
